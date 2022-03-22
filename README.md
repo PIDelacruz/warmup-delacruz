@@ -1,5 +1,6 @@
 ## PHP Warmup Module
-*contains website that accepts input from textbox to be submitted and added to the database afterwhich the data would be displayed on the website*
+*Contains website that accepts input from textbox when submitted and added to the database<br> afterwhich the data would be displayed on the website* <br><br>
+*Data taken and displayed includes input from textbox and date time when submitted*
 ### Included Files
 - ### Database Folder
   - **messages.sql** <br> contains database sql file for importing
