@@ -1,4 +1,13 @@
 <?php
+session_start();
+if(!empty($_SESSION['loggedin'])){
+	echo "session = " . $_SESSION['username'];
+}
+else{
+	header("Location: login_warmup.php");
+	exit;
+}
+
 if(isset($_POST['btnsubmit'])){ 
   include('database_input.php');
 }    
@@ -21,8 +30,9 @@ if(isset($_POST['btnsubmit'])){
 			<input type = "text" name = "message">
 			<input type = "submit" name = "btnsubmit">
 		</form>
+		<a href="logout_warmup.php">LOGOUT</a>
 		<br />
-		<h3> Draft News Feed</h3>
+		<h3> Draft News Feed </h3>
 		<?php include ('database_output.php') ?>
 	</body>
 </html>
