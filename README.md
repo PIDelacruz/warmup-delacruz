@@ -11,6 +11,7 @@
   - **database_input.php** <br> contains php for inserting php form input data to the database.
   - **database_output.php** <br> contains php for displaying data from database into main website (warmup.php)
   - **logout_warmup.php** <br> external php for logging out and destroying session
+  - **dbcon.php** <br> external php for connection with database. used by all external php for database connection
   - **query_register.php** <br> php file for running insert with hash passwords
   
   
